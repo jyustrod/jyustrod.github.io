@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1116">
+  <meta name="description" content="Javier Yustres Rodríguez — Computer Science student at UAX. Python, software engineering, automation and applied AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Javier Yustres Rodríguez — Software Developer">
+  <meta property="og:description" content="Computer Science student building practical software, automation and AI-powered applications.">
+  <meta property="og:url" content="https://jyustrod.github.io/">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://jyustrod.github.io/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/app.js" defer></script>
+  <title>Javier Yustres Rodríguez — Software Development & AI</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Javier Yustres Rodríguez — top">JYR<span class="dot">.</span></a>
+      <nav class="navigation" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="signal" aria-hidden="true"></span><span data-i18n="eyebrow">Computer Science · Madrid, Spain</span></div>
+          <h1 id="hero-title">Javier Yustres<br><span class="muted-heading">Rodríguez.</span></h1>
+          <p class="hero-role" data-i18n="heroRole">Software development <span class="accent-amp">&</span> applied AI.</p>
+          <p class="hero-description" data-i18n="heroDescription">I build practical applications with a focus on Python, clean architecture and automation. Currently finishing my Computer Science degree at Universidad Alfonso X el Sabio.</p>
+          <div class="hero-ctas">
+            <a class="button button-primary" href="#projects"><span data-i18n="seeProjects">View projects</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="https://github.com/jyustrod" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="hero-side" aria-label="Quick facts">
+          <div class="side-rule"></div>
+          <div class="stat"><span data-i18n="focusLabel">FOCUS</span><strong>Python / AI / Software</strong></div>
+          <div class="stat"><span data-i18n="locationLabel">BASED IN</span><strong>Madrid, Spain</strong></div>
+          <div class="stat"><span data-i18n="graduateLabel">GRADUATION</span><strong>2027 <small data-i18n="expected">(expected)</small></strong></div>
+          <div class="stat"><span data-i18n="languageLabel">ENGLISH</span><strong>C2 · CEFR</strong></div>
+        </aside>
+      </div>
+      <div class="hero-bottom"><span data-i18n="scroll">SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></div>
+    </section>
+
+    <section class="section shell" id="about" aria-labelledby="about-heading">
+      <div class="section-head"><span class="section-index">01 /</span><h2 id="about-heading" data-i18n="aboutTitle">About me</h2></div>
+      <div class="section-content about-layout">
+        <p class="lead" data-i18n="aboutLead">I'm a fourth-year Computer Science student interested in the full process of creating software: from understanding a problem to building, testing and deploying a solution.</p>
+        <p class="body-copy" data-i18n="aboutBody">My work explores backend systems, web applications and the integration of artificial intelligence into real workflows. I enjoy turning complex requirements into usable, maintainable tools.</p>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects" aria-labelledby="projects-heading">
+      <div class="section-head"><span class="section-index">02 /</span><h2 id="projects-heading" data-i18n="projectsTitle">Selected projects</h2></div>
+      <div class="section-content">
+        <p class="section-intro" data-i18n="projectsIntro">A selection of applications I've worked on. Project repositories are private; descriptions focus on the public-facing technical scope.</p>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">01</span><span class="project-type" data-i18n="p1Type">APPLIED AI · AUTOMATION</span></div>
+            <h3>MiCuE-CLM</h3>
+            <p data-i18n="p1Description">A conversational assistant for agricultural record management through WhatsApp, combining AI-based interpretation with structured validation and confirmation workflows.</p>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>Cloudflare Workers</span><span>D1</span><span>Workers AI</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">02</span><span class="project-type" data-i18n="p2Type">BUSINESS SOFTWARE · BACKEND</span></div>
+            <h3>Avanduo</h3>
+            <p data-i18n="p2Description">A business workflow and CRM application supporting opportunity research, project tracking and proposal review, with automation and external service integrations.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>Docker</span><span>n8n</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">03</span><span class="project-type" data-i18n="p3Type">WEB DEVELOPMENT · FRONTEND</span></div>
+            <h3>Nature Pistachio</h3>
+            <p data-i18n="p3Description">A bilingual corporate website with responsive layouts, interactive content, search engine metadata and a streamlined presentation of a pistachio cooperative.</p>
+            <div class="tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>SEO</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="skills" aria-labelledby="skills-heading">
+      <div class="section-head"><span class="section-index">03 /</span><h2 id="skills-heading" data-i18n="skillsTitle">Technical skills</h2></div>
+      <div class="section-content skills-grid">
+        <div class="skill-group"><h3 data-i18n="skillLanguages">Languages</h3><p>Python · TypeScript · JavaScript · Java</p></div>
+        <div class="skill-group"><h3 data-i18n="skillBackend">Backend & data</h3><p>FastAPI · Flask · PostgreSQL · SQL · SQLAlchemy</p></div>
+        <div class="skill-group"><h3 data-i18n="skillFrontend">Web</h3><p>React · Next.js · HTML · CSS</p></div>
+        <div class="skill-group"><h3 data-i18n="skillAutomation">AI, tooling & delivery</h3><p>LLM integration · Git · Docker · GitHub Actions · CI/CD</p></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="education" aria-labelledby="education-heading">
+      <div class="section-head"><span class="section-index">04 /</span><h2 id="education-heading" data-i18n="educationTitle">Education</h2></div>
+      <div class="section-content timeline">
+        <article class="education-item"><div class="education-meta">2023 — 2027 <span data-i18n="anticipated">· Expected</span></div><div><h3 data-i18n="degree">BSc in Computer Science</h3><p>Universidad Alfonso X el Sabio (UAX)</p><p class="education-note" data-i18n="average">Academic average (unweighted, completed courses): 8.12 / 10</p></div></article>
+        <article class="education-item"><div class="education-meta">2027 <span data-i18n="anticipated">· Expected</span></div><div><h3 data-i18n="certificate">Certificate in Business & Product Innovation</h3><p>The Valley</p></div></article>
+        <article class="education-item"><div class="education-meta" data-i18n="languagesMeta">LANGUAGES</div><div><h3 data-i18n="english">English · C2 (CEFR)</h3><p data-i18n="spanish">Spanish · Native</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="shell contact-inner">
+        <span class="contact-overline" data-i18n="contactOverline">05 / CONTACT</span>
+        <h2 id="contact-heading" data-i18n="contactTitle">Let's connect.</h2>
+        <p data-i18n="contactBody">Interested in software development, Python and applied AI opportunities.</p>
+        <a class="email-link" href="mailto:javier.yustres05@outlook.com">javier.yustres05@outlook.com <span aria-hidden="true">↗</span></a>
+        <a class="github-link" href="https://github.com/jyustrod" target="_blank" rel="noopener noreferrer">github.com/jyustrod <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <span>© <span id="year">2026</span> Javier Yustres Rodríguez</span>
+    <span data-i18n="footer">Built with care · Hosted on GitHub Pages</span>
+    <a href="#top" data-i18n="backTop">Back to top ↑</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "javier-yustres-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual, accessible, zero-dependency CV portfolio for GitHub Pages",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check assets/app.js && npm test",
+    "build": "node scripts/build.mjs",
+    "verify": "npm run check && npm run build && node scripts/verify-build.mjs"
+  }
+}

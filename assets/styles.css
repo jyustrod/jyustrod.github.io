@@ -11,3 +11,74 @@
 @media(max-width:700px){.shell{padding-inline:20px}.header-inner{height:auto;min-height:69px;flex-wrap:wrap;gap:8px;padding-block:13px}.navigation{order:3;width:100%;overflow-x:auto;gap:21px;padding-block:8px;white-space:nowrap;scrollbar-width:none}.navigation::-webkit-scrollbar{display:none}.header-actions{margin-left:auto}.hero{padding-top:80px;min-height:auto}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(52px,11.6vw,78px)}.hero-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 24px;padding-top:25px}.side-rule{display:none}.stat{margin-bottom:0}.hero-bottom{padding-top:40px}.section{grid-template-columns:1fr;padding-top:68px;padding-bottom:68px;gap:20px}.section-head h2{font-size:16px}.project-card{padding:23px}.project-card h3{font-size:24px}.education-item{grid-template-columns:1fr;gap:6px}.contact-section{padding:80px 0 88px}.footer{flex-direction:column;gap:8px}}
 @media(max-width:420px){.hero-side{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr;gap:20px}.hero-role{font-size:21px}.project-top{align-items:flex-start}.project-type{max-width:160px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Compact CV layout: keep every section visible without excessive vertical whitespace. */
+.header-inner{height:64px}
+.navigation{gap:20px}
+.hero{padding-top:60px;min-height:0}
+.hero-grid{grid-template-columns:minmax(0,1fr) 205px;gap:42px}
+.eyebrow{margin-bottom:18px}
+.hero h1{font-size:clamp(52px,6.2vw,82px);margin-bottom:16px}
+.hero-role{font-size:clamp(20px,2.1vw,25px);margin-bottom:12px}
+.hero-description{font-size:14px;line-height:1.7;max-width:575px;margin-bottom:20px}
+.hero-bottom{padding:34px 0 14px}
+.side-rule{margin-bottom:13px}
+.stat{padding-bottom:12px;margin-bottom:12px}
+.section{grid-template-columns:165px minmax(0,1fr);gap:25px;padding-top:52px;padding-bottom:52px}
+.section-head h2{font-size:16px}
+.lead{font-size:clamp(20px,2.2vw,28px);line-height:1.47;margin-bottom:15px}
+.body-copy,.section-intro{font-size:14px;line-height:1.7}
+.section-intro{margin-bottom:16px}
+.project-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.project-card{display:flex;flex-direction:column;padding:20px;min-width:0}
+.project-top{margin-bottom:15px}
+.project-card h3{font-size:22px;margin-bottom:10px}
+.project-card p{font-size:12.5px;line-height:1.67;margin-bottom:17px}
+.tags{margin-top:auto;gap:5px}
+.tags span{font-size:10px;padding:4px 7px}
+.skills-grid{gap:20px 22px}
+.skill-group{padding-top:12px}
+.skill-group h3{font-size:13px;margin-bottom:5px}
+.skill-group p{font-size:13px;line-height:1.6;margin-bottom:0}
+.education-item{grid-template-columns:140px minmax(0,1fr);gap:16px;padding-bottom:17px;margin-bottom:17px}
+.education-item h3{font-size:17px}
+.education-item p{font-size:13px}
+.contact-section{padding:64px 0 68px}
+.contact-inner h2{font-size:clamp(46px,6vw,74px);margin:12px 0}
+.contact-inner p{font-size:14px;margin-bottom:20px}
+.email-link{font-size:clamp(17px,2vw,23px)}
+.github-link{margin-top:15px}
+.footer{padding-top:19px;padding-bottom:19px}
+@media(min-width:701px) and (max-width:1000px){
+  .section{grid-template-columns:160px minmax(0,1fr);gap:20px}
+  .project-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-grid{grid-template-columns:minmax(0,1fr) 170px;gap:25px}
+}
+@media(max-width:700px){
+  .header-inner{height:auto;min-height:64px}
+  .navigation{gap:19px}
+  .hero{padding-top:43px}
+  .hero-grid{grid-template-columns:1fr;gap:12px}
+  .eyebrow{margin-bottom:14px}
+  .hero h1{font-size:clamp(43px,10.2vw,65px);margin-bottom:14px}
+  .hero-description{font-size:14px;line-height:1.6;margin-bottom:18px}
+  .hero-side{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;padding-top:14px}
+  .stat{padding-bottom:8px;margin-bottom:0}
+  .hero-bottom{padding-top:25px}
+  .section{grid-template-columns:1fr;gap:12px;padding-top:37px;padding-bottom:36px}
+  .lead{font-size:21px;line-height:1.45;margin-bottom:12px}
+  .body-copy{font-size:13.5px}
+  .project-list{grid-template-columns:1fr;gap:9px}
+  .project-card{padding:17px 18px}
+  .project-top{margin-bottom:9px}
+  .project-card h3{font-size:21px;margin-bottom:7px}
+  .project-card p{font-size:13px;line-height:1.6;margin-bottom:11px}
+  .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+  .education-item{grid-template-columns:1fr;gap:4px;padding-bottom:13px;margin-bottom:13px}
+  .contact-section{padding:49px 0 54px}
+  .contact-inner h2{font-size:clamp(43px,10vw,64px)}
+}
+@media(max-width:420px){
+  .hero-side{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .skills-grid{grid-template-columns:1fr;gap:12px}
+}
